@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large measurement files)
+*.npz
+*.mat
+
+# Generated figures
+Figures_Paper/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
