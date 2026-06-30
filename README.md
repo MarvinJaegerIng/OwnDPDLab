@@ -42,9 +42,9 @@ pip install -r requirements.txt
 ## Hardware
 
 - **RFSoC 4×2** (Xilinx/AMD) running the companion PYNQ driver (`RFSoC/pynq_driver.ipynb`).
+- .hwh and .bit have to be in the same directory as he pynq_driver.py file on the RFSoC 
 - The board must be reachable at `192.168.3.1:5555` (configurable in the notebook).
-- The Vivado bitstream (`.bit`) and hardware hand-off file (`.hwh`) will be uploaded soon.
-- The measurement data files (`messdaten_zone*.npz`) allow running the plotting and metrics cells **without hardware** and optimize plots without connected hardware afterwards.
+
 
 ## Quick start (offline, pre-recorded data)
 
