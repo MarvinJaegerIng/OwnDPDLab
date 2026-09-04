@@ -1,7 +1,7 @@
 # OwnDPDLab — Open-Source Digital Pre-Distortion Testbed
 
-Please find the regarding publication on arXiv: [
-](https://arxiv.org/abs/2607.11612)
+Please find the regarding publication on arXiv: https://arxiv.org/abs/2607.11612
+
 A hardware-in-the-loop DPD evaluation framework using a Xilinx RFSoC 4×2 software-defined radio. The testbed measures, trains, and evaluates polynomial and neural-network DPD models directly on real PA hardware.
 
 ## Overview
