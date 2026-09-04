@@ -41,22 +41,22 @@ begin
                 packet_limit_prev <= (others => '0');
                 limit_changed     <= '0';
             else
-                -- GPIO-Wert eintakten
+                
                 packet_limit      <= signed(packet_count_in);
                 packet_limit_prev <= packet_limit;
 
-                -- Änderungserkennung
+                
                 if packet_limit /= packet_limit_prev then
                     limit_changed <= '1';
                 else
                     limit_changed <= '0';
                 end if;
 
-                -- Daten durchregistern
+                
                 m_axis_tdata  <= s_axis_tdata;
                 m_axis_tvalid <= s_axis_tvalid;
 
-                -- Zähler und TLAST
+                
                 if m_axis_tready = '1' and s_axis_tvalid = '1' then
                     if limit_changed = '1' then
                         m_axis_tlast <= '1';
