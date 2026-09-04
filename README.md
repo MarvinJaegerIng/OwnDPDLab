@@ -2,6 +2,8 @@
 
 Please find the regarding publication on arXiv: https://arxiv.org/abs/2607.11612
 
+If you having questions, feel free to write an email to the authors.
+
 A hardware-in-the-loop DPD evaluation framework using a Xilinx RFSoC 4×2 software-defined radio. The testbed measures, trains, and evaluates polynomial and neural-network DPD models directly on real PA hardware.
 
 ## Overview
