@@ -1,5 +1,7 @@
 # OwnDPDLab — Open-Source Digital Pre-Distortion Testbed
 
+Please find the regarding publication on arXiv: [
+](https://arxiv.org/abs/2607.11612)
 A hardware-in-the-loop DPD evaluation framework using a Xilinx RFSoC 4×2 software-defined radio. The testbed measures, trains, and evaluates polynomial and neural-network DPD models directly on real PA hardware.
 
 ## Overview
@@ -51,7 +53,18 @@ pip install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 jupyter notebook experiment.ipynb
+upload .bit,.hwh, and the server code to the RFSoC
+find out the ip address of the used board and update in the RFSoC constructor
+Run server code on the RFSoC
+Run experiment.ipynb
 ```
+
+## Build Vivado Project
+1. Compile the replay engine in vitis HLS
+2. Create Vivado project, containing the board file
+3. In settings adding the Vitis path
+4. Add the throw_last.vhd to the source file
+5. run .tcl to build the project
 
 Skip Cell 1 (hardware acquisition) and run Cell 2 directly — it loads `messdaten_zone1.npz` / `messdaten_zone2.npz` and produces all figures.
 
