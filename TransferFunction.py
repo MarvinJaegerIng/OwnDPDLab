@@ -28,7 +28,7 @@ class RFSoC:
     def __init__(self, host="192.168.3.1", port=5555,
                  num_samples=100_000, m_dac=4, m_adc=4,
                  f_clk_dac=245.76e6, f_clk_adc=245.76e6,
-                 code_length=12, code_spread=4, sync_oversample=8):
+                 code_length=12, code_spread=4, sync_oversample=64):
         self.host = host
         self.port = port
         self.num_samples = num_samples
